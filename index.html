@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TR-808 Style Drum Machine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tr808">
+  <div class="header">
+    <div class="brand">
+      <span class="logo-square"></span>
+      <span class="brand-text">VIRTUAL DRUM MACHINE</span>
+    </div>
+    <div class="title">
+      <div>Rhythm Composer</div>
+      <div class="model">ML-1</div>
+    </div>
+    <div class="controls">
+      <label>TEMPO
+        <input type="range" id="tempo" min="60" max="200" value="120">
+      </label>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+    </div>
+  </div>
+
+  <div class="voices">
+    <div class="voice-row" data-voice="kick">
+      <div class="voice-label kick">BASS DRUM</div>
+      <div class="steps"></div>
+    </div>
+    <div class="voice-row" data-voice="snare">
+      <div class="voice-label snare">SNARE DRUM</div>
+      <div class="steps"></div>
+    </div>
+    <div class="voice-row" data-voice="hat">
+      <div class="voice-label hat">HI-HAT</div>
+      <div class="steps"></div>
+    </div>
+    <div class="voice-row" data-voice="clap">
+      <div class="voice-label clap">CLAP</div>
+      <div class="steps"></div>
+    </div>
+  </div>
+
+  <div class="step-bar">
+    <div class="step-label">1</div>
+    <div class="step-label">2</div>
+    <div class="step-label">3</div>
+    <div class="step-label">4</div>
+    <div class="step-label">5</div>
+    <div class="step-label">6</div>
+    <div class="step-label">7</div>
+    <div class="step-label">8</div>
+    <div class="step-label">9</div>
+    <div class="step-label">10</div>
+    <div class="step-label">11</div>
+    <div class="step-label">12</div>
+    <div class="step-label">13</div>
+    <div class="step-label">14</div>
+    <div class="step-label">15</div>
+    <div class="step-label">16</div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
